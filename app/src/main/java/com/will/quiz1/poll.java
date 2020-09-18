@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class poll extends AppCompatActivity implements View.OnClickListener {
-    private TextView nextbtn;
+    private Button nextbtn;
     private CheckBox check1;
     private CheckBox check2;
     private CheckBox check3;
@@ -69,7 +70,7 @@ public class poll extends AppCompatActivity implements View.OnClickListener {
 
         switch (view.getId()){
 
-            case R.id.nextbtn:
+            case R.id.check5:
 
             if(check5.isChecked()==true){
                 check1.setChecked(false);
@@ -85,35 +86,35 @@ public class poll extends AppCompatActivity implements View.OnClickListener {
             case R.id.check1:
 
             if(check1.isChecked()==true){
-                pollnex+=4; }else{
-                pollnex-=4;
+                pollnex+=3; }else{
+                pollnex-=3;
             }
             break;
 
             case R.id.check2:
 
             if(check2.isChecked()==true){
-                pollnex+=4;
+                pollnex+=3;
             }else{
-                pollnex-=4;
+                pollnex-=3;
             }
 
             break;
 
             case R.id.check3:
             if(check3.isChecked()==true){
-                pollnex+=4;
+                pollnex+=3;
             }else{
-                pollnex-=4;
+                pollnex-=3;
             }
 
             break;
 
-            case R.id.check4
+            case R.id.check4:
             if(check4.isChecked()==true){
-                pollnex+=4;
+                pollnex+=3;
             }else{
-                pollnex-=4;
+                pollnex-=3;
             }
 
             break;
