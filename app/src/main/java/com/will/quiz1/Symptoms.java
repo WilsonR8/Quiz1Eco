@@ -33,6 +33,9 @@ public class Symptoms extends AppCompatActivity {
         check12=findViewById(R.id.check12);
 
 
+
+
+
         nextbtn.setOnClickListener(
                 (v)->{
 
